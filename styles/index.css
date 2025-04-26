@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #7FE8FF; /* Fallback background color */
+    background-image: 
+        repeating-linear-gradient(45deg, transparent 0, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 11px),
+        repeating-linear-gradient(-45deg, transparent 0, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 11px),
+        linear-gradient(to bottom, #7FE8FF, #0e2f50), /* Gradient background */
+        url('/web/projet web/img/wave-haikei.svg'); /* Adjusted to absolute path */
+    background-size: 
+        20px 20px, /* Size for the first repeating-linear-gradient (crosses) */
+        20px 20px, /* Size for the second repeating-linear-gradient (crosses) */
+        100% 100%; /* Size for the linear gradient background */
+    background-position: 0 0, 0 0, 0 0; /* Align layers */
+}
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Makes the header stay in place while scrolling */
+    top: 0; /* Aligns the header to the top of the page */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Ensures the header spans the full width of the page */
+    z-index: 1000;
+  }
+
+  .odd-logo {
+    width: 120px;
+    margin-right: 120px;
+  }
+
+  .title {
+    animation: slideInFromLeft 1s ease-out;
+    font-size: 2rem;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    max-width: 600px;
+
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #0e2f50;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .bubble {
+    animation: slideInFromBottom 1s ease-out;
+    animation-delay: 0.5s; /* Add a slight delay for better effect */
+    opacity: 0; /* Ensure bubbles are hidden before animation starts */
+    animation-fill-mode: forwards; /* Keep the final state after animation */
+    background-color: rgba(25, 58, 104, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    background-color: #0e2f50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .footer-logo {
+    width: 40px;
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10vw;
+    align-items: center
+  }
+
+  .bubble:nth-child(1) {
+    align-self: flex-start;
+    margin-bottom: 200px;
+  }
+
+  .bubble:nth-child(2) {
+    align-self: center;
+    margin-bottom: 160px;
+  }
+
+  .bubble:nth-child(3) {
+
+    margin-right: 10vw;
+    margin-bottom: 40px;
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animation for the bubbles */
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
