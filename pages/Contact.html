@@ -6,9 +6,9 @@
   <title>ODD14 - Vie Aquatique</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="../pages/index.html">
+  <script src="../scripts/index.js" defer></script>
 </head>
-<body class="Garde">
+<body class="Index">
 
   <header>
     <nav class="navbar">
@@ -34,32 +34,51 @@
       </ul>
     </nav>
   </header>
-  <video autoplay muted loop class="background-video">
-    <source src="../img/istockphoto-1206204044-640_adpp_is.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la vidéo HTML5.
-  </video>
 
-  <div class="container">
-    <h1>Bienvenue</h1>
-    <button class="enter-button" onclick="window.location.href='../pages/index.html'" style="background-image: url('../img/PGoM.gif')";">
-      Entrée dans le monde de la vie sous-marine
-    </button>
-  </div>
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>Pour toute question ou information, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
+        <form action="#" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
 
-  <div class="info-bar">
-    <div class="info-content">
-      <h2>Protégeons la vie marine</h2>
-      <br>
-      <p>Notre mission est de préserver les écosystèmes marins, protéger les espèces en danger, et sensibiliser le public à l'importance des océans pour notre planète.</p>
-      <p>Rejoignez-nous pour construire un avenir durable et respectueux des océans.</p>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button type="submit">Envoyer</button>
+        </form>
+    
     </div>
-  </div>
+
 
   <img src="../img/waves.svg" alt="waves">
   <footer>
    
     <img src="../img/odd14.png" alt="ODD 14" class="footer-logo">
-    <div>à propos</div>
+    <div>
+      <h2>
+        Notre association :
+        <a href="https://bloomassociation.org/" target="_blank">
+          <u>Bloom</u>
+        </a>
+      </h2>
+      <h2>
+        Notre chaine youtube :
+        <a href="https://www.youtube.com/@CedrikDjelassi" target="_blank">
+          <u>Pêche</u>
+        </a>
+      </h2>
+      <h2>
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+          <u>FAQ AIDE</u>
+        </a>
+      </h2>
+    </div>
     <div>All rights reserved | Powered by AWS</div>
   </footer>
 
