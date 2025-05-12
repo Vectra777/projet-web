@@ -38,23 +38,32 @@
 <div class="carousel">
     <div class="slides">
       <div>
-        <img src="../img/thon.jpg">
-        <article>
-          <h2>Thon rouge de l’Atlantique (Thunnus thynnus)</h2>
+        <img src="../img/tortue-luth.webp">
+        <article >
+          <h2>Tortue luth (Dermochelys coriacea)</h2>
           <ul>
-            <li><p><strong>Espèce</strong> : Ce grand poisson migrateur peut dépasser 3 mètres de long. Il est très rapide et peut réguler sa température corporelle, ce qui est rare chez les poissons. Le thon rouge est très prisé pour le sushi et le sashimi.</p></li>
-            <li><p><strong>Situation</strong> : Victime de la surpêche intensive depuis des décennies, ses populations ont fortement décliné. Des quotas ont été mis en place pour tenter d’enrayer la baisse, mais la demande commerciale reste très forte, notamment en Asie.</p></li>
+            <li><p><strong>Espèce</strong> : C’est la plus grande des tortues marines, pouvant peser jusqu’à 700 kg. Elle se distingue par sa carapace souple et noire, recouverte de crêtes longitudinales. Elle migre sur de très longues distances.</p></li>
+            <li><p><strong>Situation</strong> : Elle est menacée par la pollution plastique, les filets de pêche, la destruction des plages de nidification et le changement climatique. La ponte est en baisse dans plusieurs régions du globe.</p></li>
           </ul> 
         </article>
       </div>
       <div>
-          <img src="../img/Merou2.jpg">
+          <img src="../img/baleinenoire.jpg">
           <article>
-            
-            <h2>Mérou géant (Epinephelus itajara)</h2>
+            <h2>Baleine noire de l’Atlantique Nord (Eubalaena glacialis)</h2>
             <ul>
-              <li><p><strong>Espèce</strong> : Le mérou géant peut atteindre 2,5 mètres de long et peser plus de 300 kg. Il vit dans les récifs coralliens et les mangroves, et se nourrit de poissons et de crustacés.</p></li>
-              <li><p><strong>Situation</strong> : Il est gravement menacé par la surpêche, car il est facile à capturer pendant la reproduction. La dégradation des récifs coralliens nuit également à son habitat naturel.</p></li>
+              <li><p><strong>Espèce</strong> : Cette baleine peut mesurer jusqu’à 16 mètres et peser 70 tonnes. Elle nage lentement et passe beaucoup de temps en surface, ce qui la rend vulnérable aux collisions.</p></li>
+              <li><p><strong>Situation</strong> : Moins de 350 individus subsistent. Elle est menacée par les collisions avec les navires et les enchevêtrements dans les engins de pêche.</p></li>
+            </ul>
+          </article>
+      </div>  
+      <div>
+          <img src="../img/Dugong.jpg">
+          <article>
+            <h2>Dugong (Dugong dugon)</h2>
+            <ul>
+              <li><p><strong>Espèce</strong> : Herbivore marin proche du lamantin, le dugong vit dans les eaux côtières chaudes de l’océan Indien et Pacifique. Il se nourrit principalement d’herbiers marins.</p></li>
+              <li><p><strong>Situation</strong> : Il est vulnérable à la pollution, à la destruction des herbiers et aux collisions avec les bateaux. Son déclin est rapide dans plusieurs régions.</p></li>
             </ul>
           </article>
       </div>  
