@@ -10,15 +10,54 @@
 </head>
 <body class="Index">
 
-<header class="top_Poisson">
- 
+<header>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#" onclick="window.location.href='../pages/index.html'">Accueil</a></li>
+      <li class="dropdown">
+        <a href="#">À propos ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Notre mission</a></li>
+          <li><a href="#">L'équipe</a></li>
+          <li><a href="#">Nos partenaires</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Encyclopedie des fond marins ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" onclick="window.location.href='../pages/Poisson.html'">Poissons</a></li>
+          <li><a href="#">Mammifère</a></li>
+          <li><a href="#">Coraux et flore</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <div class="carousel">
     <div class="slides">
-      <img src="../img/P1.jpg" alt="Image 1">
-      <img src="../img/P2.png" alt="Image 2">
-      <img src="../img/P3.png" alt="Image 3">
+      <div>
+        <img src="../img/thon.jpg">
+        <article alt="article1">
+          <h2>Thon rouge de l’Atlantique (Thunnus thynnus)</h2>
+          <ul>
+            <li><p><strong>Espèce</strong> : Ce grand poisson migrateur peut dépasser 3 mètres de long. Il est très rapide et peut réguler sa température corporelle, ce qui est rare chez les poissons. Le thon rouge est très prisé pour le sushi et le sashimi.</p></li>
+            <li><p><strong>Situation</strong> : Victime de la surpêche intensive depuis des décennies, ses populations ont fortement décliné. Des quotas ont été mis en place pour tenter d’enrayer la baisse, mais la demande commerciale reste très forte, notamment en Asie.</p></li>
+          </ul> 
+        </article>
+      </div>
+      <div>
+          <img src="../img/P2.png">
+          <article alt="article2">
+            
+            <h2>Mérou géant (Epinephelus itajara)</h2>
+            <ul>
+              <li><p><strong>Espèce</strong> : Le mérou géant peut atteindre 2,5 mètres de long et peser plus de 300 kg. Il vit dans les récifs coralliens et les mangroves, et se nourrit de poissons et de crustacés.</p></li>
+              <li><p><strong>Situation</strong> : Il est gravement menacé par la surpêche, car il est facile à capturer pendant la reproduction. La dégradation des récifs coralliens nuit également à son habitat naturel.</p></li>
+            </ul>
+          </article>
+      </div>  
     </div>
     <button class="prev" onclick="moveSlide(-1)">❮</button>
     <button class="next" onclick="moveSlide(1)">❯</button>
