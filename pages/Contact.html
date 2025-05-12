@@ -35,33 +35,25 @@
     </nav>
   </header>
 
-<div class="carousel">
-    <div class="slides">
-      <div>
-        <img src="../img/thon.jpg">
-        <article alt="article1">
-          <h2>Thon rouge de l’Atlantique (Thunnus thynnus)</h2>
-          <ul>
-            <li><p><strong>Espèce</strong> : Ce grand poisson migrateur peut dépasser 3 mètres de long. Il est très rapide et peut réguler sa température corporelle, ce qui est rare chez les poissons. Le thon rouge est très prisé pour le sushi et le sashimi.</p></li>
-            <li><p><strong>Situation</strong> : Victime de la surpêche intensive depuis des décennies, ses populations ont fortement décliné. Des quotas ont été mis en place pour tenter d’enrayer la baisse, mais la demande commerciale reste très forte, notamment en Asie.</p></li>
-          </ul> 
-        </article>
-      </div>
-      <div>
-          <img src="../img/P2.png">
-          <article alt="article2">
-            
-            <h2>Mérou géant (Epinephelus itajara)</h2>
-            <ul>
-              <li><p><strong>Espèce</strong> : Le mérou géant peut atteindre 2,5 mètres de long et peser plus de 300 kg. Il vit dans les récifs coralliens et les mangroves, et se nourrit de poissons et de crustacés.</p></li>
-              <li><p><strong>Situation</strong> : Il est gravement menacé par la surpêche, car il est facile à capturer pendant la reproduction. La dégradation des récifs coralliens nuit également à son habitat naturel.</p></li>
-            </ul>
-          </article>
-      </div>  
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>Pour toute question ou information, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
+        <form action="#" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button type="submit">Envoyer</button>
+        </form>
+    
     </div>
-    <button class="prev" onclick="moveSlide(-1)">❮</button>
-    <button class="next" onclick="moveSlide(1)">❯</button>
-  </div>
 
 
   <img src="../img/waves.svg" alt="waves">
