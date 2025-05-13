@@ -296,4 +296,86 @@
   .prev { left: 10px; }
   .next { right: 10px; }
 
+
+.Contact_form p,h1 {
+  text-align: center;
+}
+ .Contact_form form {
+  margin-bottom: 30px;
+}
+
+.Contact_form fieldset {
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 20px;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24)), /* couche blanche transparente */
+    repeating-linear-gradient(45deg, transparent 0, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 11px),
+    repeating-linear-gradient(-45deg, transparent 0, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 11px),
+    linear-gradient(to bottom, #7FE8FF, #0e2f50),
+    url('/web/projet web/img/wave-haikei.svg');
+  box-shadow: 2px 2px 6px rgba(0, 100, 0, 0.1);
   
+}
+
+.Contact_form legend {
+  background-color: #2e8b57;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ----- CHAMPS ----- */
+.Contact_form label {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.Contact_form input[type="text"],
+input[type="email"],
+input[type="date"],
+select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Contact_form textarea {
+  resize: vertical;
+}
+
+/* ----- QUESTIONS RADIO / CHECKBOX ----- */
+.Contact_form input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.Contact_form ol {
+  padding-left: 20px;
+}
+
+.Contact_form ol > li {
+  margin-bottom: 20px;
+}
+
+/* ----- BOUTON ENVOYER ----- */
+.Contact_form input[type="submit"] {
+  background-color: #228b22;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Contact_form input[type="submit"]:hover {
+  background-color: #1a6e1a;
+}

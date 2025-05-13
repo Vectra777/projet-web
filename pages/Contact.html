@@ -35,23 +35,49 @@
     </nav>
   </header>
 
-    <div class="container">
+    <div class="Contact_form">
         <h1>Contactez-nous</h1>
         <p>Pour toute question ou information, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
-        <form action="#" method="post">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required>
+        <form>
+    <fieldset>
+      <legend>Quiz sur la Green IT</legend>
+      <ol>
+        <li>
+          Qu’est-ce que la Green IT ?<br>
+          <input type="radio" name="q1" id="q1a" value="a">
+          <label for="q1a">Une pratique visant à réduire l’impact environnemental des technologies de l'information.</label><br>
 
-        <br>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
+          <input type="radio" name="q1" id="q1b" value="b">
+          <label for="q1b">Un système de recyclage des anciens ordinateurs.</label><br>
 
+          <input type="radio" name="q1" id="q1c" value="c">
+          <label for="q1c">Une méthode pour augmenter la consommation énergétique des serveurs.</label><br>
+        </li>
         <br>
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-    
-        <button type="submit">Envoyer</button>
-        </form>
+
+        <li>
+          Quel est l’objectif principal de la Green IT ?<br>
+          <input type="checkbox" id="q2a" name="q2a">
+          <label for="q2a">Réduire la consommation d’énergie.</label><br>
+
+          <input type="checkbox" id="q2b" name="q2b">
+          <label for="q2b">Minimiser les déchets électroniques.</label><br>
+
+          <input type="checkbox" id="q2c" name="q2c">
+          <label for="q2c">Optimiser les performances des appareils électroniques.</label><br>
+        </li>
+        <br>
+
+        <li>
+          Donnez un exemple de pratique Green IT :<br>
+          <textarea name="q3" id="q3" rows="5" cols="50" placeholder="Ex. : compresser les images, utiliser un hébergement écoresponsable..."></textarea>
+        </li>
+      </ol>
+
+      <br>
+      <input type="submit" value="Envoyer">
+    </fieldset>
+  </form>
     
     </div>
 
