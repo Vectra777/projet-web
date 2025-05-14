@@ -305,7 +305,7 @@
 }
 
 .Contact_form fieldset {
-  border: 2px solid #2e8b57;
+  border: 2px solid #0709a1;
   border-radius: 10px;
   padding: 20px;
   background-image: 
@@ -319,7 +319,7 @@
 }
 
 .Contact_form legend {
-  background-color: #2e8b57;
+  background-color: #0709a1;
   color: white;
   padding: 8px 12px;
   border-radius: 5px;
@@ -366,7 +366,7 @@ input[type="checkbox"] {
 
 /* ----- BOUTON ENVOYER ----- */
 .Contact_form input[type="submit"] {
-  background-color: #228b22;
+  background-color: #0709a1;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -377,5 +377,21 @@ input[type="checkbox"] {
 }
 
 .Contact_form input[type="submit"]:hover {
-  background-color: #1a6e1a;
+  background-color: #0709a1;
+}
+.mission_sec {
+  margin: 60px 55px;
+}
+.mission_sec div{
+  border: 2px solid #0709a1;
+  border-radius: 10px;
+  padding: 30px;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24)), /* couche blanche transparente */
+    repeating-linear-gradient(45deg, transparent 0, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 11px),
+    repeating-linear-gradient(-45deg, transparent 0, transparent 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 11px),
+    linear-gradient(to bottom, #7FE8FF, #0e2f50),
+    url('/web/projet web/img/wave-haikei.svg');
+  box-shadow: 2px 2px 6px rgba(0, 100, 0, 0.1);
+  
 }

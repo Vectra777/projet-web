@@ -27,7 +27,7 @@
           <ul class="dropdown-menu">
             <li><a href="#" onclick="window.location.href='../pages/Poisson.html'">Poissons</a></li>
             <li><a href="#" onclick="window.location.href='../pages/Mammifere.html'">Mammifère</a></li>
-            <li><a href="#">Coraux et flore</a></li>
+            <li><a href="#" onclick="window.location.href='../pages/Coraux.html'">Coraux et flore</a></li>
           </ul>
         </li>
         <li><a href="#" onclick="window.location.href='../pages/Contact.html'">Contact</a></li>
@@ -40,39 +40,38 @@
         <p>Pour toute question ou information, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
         <form>
     <fieldset>
-      <legend>Quiz sur la Green IT</legend>
-      <ol>
-        <li>
-          Qu’est-ce que la Green IT ?<br>
-          <input type="radio" name="q1" id="q1a" value="a">
-          <label for="q1a">Une pratique visant à réduire l’impact environnemental des technologies de l'information.</label><br>
-
-          <input type="radio" name="q1" id="q1b" value="b">
-          <label for="q1b">Un système de recyclage des anciens ordinateurs.</label><br>
-
-          <input type="radio" name="q1" id="q1c" value="c">
-          <label for="q1c">Une méthode pour augmenter la consommation énergétique des serveurs.</label><br>
-        </li>
+      <legend>Vos information</legend>
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div>
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required>
+        </div>
+        <div>
+            <label for="mail">Adresse mail :</label>
+            <input type="email" id="mail" name="mail" required>
+        </div>
+        <div>
+            <label for="statut">Statut :</label>
+            <select id="statut" name="statut" required>
+                <option value="" disabled selected>Choisissez un statut</option>
+                <option value="etudiant">Étudiant</option>
+                <option value="Salarier">Salarier</option>
+                <option value="entrepreneur">Entrepreneur</option>
+                <option value="poleemploi">Habitué du pole emploi</option>
+            </select>
+        </div>
         <br>
-
         <li>
-          Quel est l’objectif principal de la Green IT ?<br>
-          <input type="checkbox" id="q2a" name="q2a">
-          <label for="q2a">Réduire la consommation d’énergie.</label><br>
-
-          <input type="checkbox" id="q2b" name="q2b">
-          <label for="q2b">Minimiser les déchets électroniques.</label><br>
-
-          <input type="checkbox" id="q2c" name="q2c">
-          <label for="q2c">Optimiser les performances des appareils électroniques.</label><br>
+          Faite nous parvenir votre message<br>
+          <textarea name="q3" id="q3" rows="5" cols="50" placeholder="Ex. : Que dois-je faire pour sauver les bébé pinguin..."></textarea>
         </li>
-        <br>
-
-        <li>
-          Donnez un exemple de pratique Green IT :<br>
-          <textarea name="q3" id="q3" rows="5" cols="50" placeholder="Ex. : compresser les images, utiliser un hébergement écoresponsable..."></textarea>
-        </li>
-      </ol>
 
       <br>
       <input type="submit" value="Envoyer">
