@@ -32,58 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-console.log("Je suis la console !");
-
-function quizAlert() {
-    alert("Vous êtes sur le point de commencer le quiz !");
-    quizConfirm();
-}
-
-function quizConfirm() {
-var res = confirm("Etes-vous sûr de vouloir continuer ?");
-if (res == true) {
-alert("Le quiz va commencer dans 5 secondes !");
-//ajouter un décompte de 5 secondes
-var timer = 5;
-//Créer un élément p pour afficher le message
-var confirmation = document.createElement("p");
-confirmation.textContent = timer + " secondes";
-//style du message
-confirmation.style.color = "red";
-confirmation.style.fontSize = "1.5em";
-confirmation.style.fontWeight = "bold";
-confirmation.style.textAlign = "center";
-//ajouter le message à la page à la suite du bouton d'id start
-var start = document.getElementById("informations");
-start.appendChild(confirmation);
-//en utilisant la fonction setInterval qui s'exécute toutes les secondes
-var interval = setInterval(function () {
-//décrémenter le décompte
-timer--;
-//On l’affiche également dans la console
-console.log(timer);
-//afficher le décompte dans l’élément p créé
-confirmation.textContent = timer + " secondes";
-//si le décompte est terminé
-//afficher le message "C'est parti ! Bonne chance !"
-//afficher le formulaire
-//afficher le bouton de soumission
-if (timer == 0) {
-clearInterval(interval);
-confirmation.textContent = "C'est parti ! Bonne chance !";
-document.getElementsByClassName("quiz")[0].style.display = "block";
-document.getElementsByTagName("button")[0].style.display = "block";
-document.getElementById("Quizbutton").style.display = "none";
-}
-}, 1000);
-} else {
-alert("Vous allez être redirigé vers la page d'accueil !");
-window.location.href = "./accueil.html";
-}
-const startBtn = document.querySelector(".Quizbutton");
-if (startBtn) startBtn.style.display = "none";
-}
-
 // Compteur global des tentatives
 let tentative = 1;
 
@@ -116,11 +64,6 @@ function submitQuiz() {
     // Affichage du score (optionnel)
     document.getElementById("resultat").textContent = `Votre score est : ${score} points`;
 
-    // Ajouter la tentative au tableau des résultats
-    const tableau = document.getElementById("resultatsTableau");
-    const ligne = tableau.insertRow(-1); // ajoute à la fin
-    const celluleTentative = ligne.insertCell(0);
-    const celluleScore = ligne.insertCell(1);
 
     celluleTentative.textContent = tentative;
     celluleScore.textContent = score;

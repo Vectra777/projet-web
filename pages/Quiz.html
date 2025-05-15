@@ -75,28 +75,13 @@
                         <textarea id="q3" name="q3" required></textarea>
                     </li>
                 </ol>
-                
+                  <p id="resultat" style="font-weight: bold; text-align: center;"></p>
+                  <div>
+                      <button onclick="submitQuiz()"type="submit" class="quiz">Envoyer</button>
+                  </div>
             </fieldset>
     
-            <div>
-                <button onclick="submitQuiz()"type="submit" class="quiz">Envoyer</button>
-            </div>
         </form>
-        <main class="box" style="border: 1px solid black; padding: 8px; margin-bottom: 20px;">
-            <p id="resultat" style="font-weight: bold; text-align: center;"></p>
-            <table id="resultatsTableau">
-                <caption>Tableau de résultat du Quiz</caption>
-                <thead>
-                    <tr>
-                        <th>Tentative</th>
-                        <th>Score</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Les lignes de résultat seront ajoutées ici -->
-                </tbody>
-            </table>
-        </main>
     </div>
    <footer>
     <img src="../img/odd14.png" alt="ODD 14" class="footer-logo">
