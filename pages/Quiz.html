@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ressources pédagogiques</title>
+  <link rel="stylesheet" href="../styles/index.css"/>
+  <script src="../scripts/index.js" defer></script>
+</head>
+<body class="Index">
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="../pages/index.html">Accueil</a></li>
+        <li class="dropdown">
+          <a href="#">À propos ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../pages/mission.html">Notre mission</a></li>
+            <li><a href="../pages/ressources.html">Ressources</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Encyclopédie Des fond marins ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../pages/Poisson.html">Poissons</a></li>
+            <li><a href="../pages/Mammifere.html">Mammifères</a></li>
+            <li><a href="../pages/Coraux.html">Coraux et flore</a></li>
+          </ul>
+        </li>
+        <li><a href="../pages/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="Contact_form">
+        <form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
+        
+            <fieldset class="quiz">
+                <legend>Quiz sur la Green IT</legend>
+                <ol>
+                    <li class="questions_style">Qu'est-ce que la Green IT ?
+                        <ul class ="questions">
+                            <li>
+                                <input type="radio" id="q1a" name="q1" value="q1r">
+                                <label for="q1a">Une pratique visant à réduire l'impact environnemental des technologies de l'information.</label>
+                            </li>
+                            <li>
+                                
+                                <input type="radio" id="q1b" name="q1" value="wrong1">
+                                <label for="q1b">Un système de recyclage des anciens ordinateurs.</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="q1c" name="q1" value="wrong2">
+                                <label for="q1c">Une méthode pour augmenter la consommation énergétique des serveurs.</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="questions_style">Quel est l'objectif principal de la Green IT ?
+                        <ul class ="questions">
+                            <li>
+                                <input type="checkbox" id="q2a" name="q2[]" value="a">
+                                <label for="q2_1" class="btn_check">Réduire la consommation d'énergie.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="q2b" name="q2[]" value="b">
+                                <label for="q2_2" class="btn_check">Minimiser les déchets électroniques.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="q2c" name="q2[]" value="c">
+                                <label for="q2_3" class="btn_check">Optimiser les performances des appareils électroniques.</label>
+                            </li>
+                        </ul>
+                    </li class="questions_style">
+                    <li>Donnez un exemple de pratique Green IT :<br>
+                        <textarea id="q3" name="q3" required></textarea>
+                    </li>
+                </ol>
+                
+            </fieldset>
+    
+            <div>
+                <button onclick="submitQuiz()"type="submit" class="quiz">Envoyer</button>
+            </div>
+        </form>
+        <main class="box" style="border: 1px solid black; padding: 8px; margin-bottom: 20px;">
+            <p id="resultat" style="font-weight: bold; text-align: center;"></p>
+            <table id="resultatsTableau">
+                <caption>Tableau de résultat du Quiz</caption>
+                <thead>
+                    <tr>
+                        <th>Tentative</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les lignes de résultat seront ajoutées ici -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+   <footer>
+    <img src="../img/odd14.png" alt="ODD 14" class="footer-logo">
+    <div>
+      <h2>Notre association : <a href="https://bloomassociation.org/" target="_blank"><u>BLOOM</u></a></h2>
+      <h2>Notre chaîne YouTube : <a href="https://www.youtube.com/@CedrikDjelassi" target="_blank"><u>Pêche</u></a></h2>
+    </div>
+    <div>All rights reserved | Powered by AWS</div>
+  </footer>
+</body>
+</html>

@@ -395,3 +395,127 @@ input[type="checkbox"] {
   box-shadow: 2px 2px 6px rgba(0, 100, 0, 0.1);
   
 }
+/* ----------- Page ressources pédagogiques ----------- */
+.resources-page {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 50px;
+}
+
+.resource-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.resource-card h2 {
+  color: #0e2f50;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.resource-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #027991;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #025e70;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown-video {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-video .btn {
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+/* Affichage fluide du menu */
+.video-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Juste en dessous du bouton */
+  right: -125px;
+  background-color: white;
+  color: #0e2f50;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  width: 300px;
+  z-index: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.video-menu .video-item {
+  margin-bottom: 10px;
+}
+
+.video-menu .video-item a {
+  font-weight: bold;
+  color: #0e2f50;
+  text-decoration: none;
+}
+
+.video-menu .video-item p {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 4px;
+}
+
+/* L’astuce : garder affiché si btn ou menu est survolé */
+.dropdown-video:hover .video-menu,
+.dropdown-video:focus-within .video-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
