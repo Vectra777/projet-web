@@ -296,12 +296,18 @@
   .prev { left: 10px; }
   .next { right: 10px; }
 
+.Contact_form {
+  width: 70%;
+  margin: 0 auto; /* centre horizontalement */
+} 
 
 .Contact_form p,h1 {
   text-align: center;
 }
  .Contact_form form {
   margin-bottom: 30px;
+  display: block;
+  max-block-size: 70%;
 }
 
 .Contact_form fieldset {
@@ -518,3 +524,20 @@ input[type="checkbox"] {
   pointer-events: auto;
 }
 
+.quiz button{
+  background-color: #0709a1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  position: center;
+
+}
+
+.quiz button:hover {
+  background-color: #025e70;
+}

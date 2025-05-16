@@ -55,18 +55,25 @@ function submitQuiz() {
 
     // Question 3 (texte)
     const q3 = document.getElementById("q3").value.toLowerCase();
-    const motsCles = ["réduire", "alléger", "faciliter", "optimiser", "exploiter"];
+    const motsCles = ["ramasser", "déchets", "plage", "réduire", "plastique", "recyclage",
+  "ne pas jeter", "tri", "sensibiliser", "réutiliser", "utiliser gourde",
+  "éviter plastique", "participer", "nettoyage", "consommer local", "produits durables"];
     const contientMotCle = motsCles.some(mot => q3.includes(mot));
     if (contientMotCle) {
         score += 10;
     }
 
     // Affichage du score (optionnel)
+        if (score < 10) {
+        document.getElementById("resultat").style.color = "red";
+      } else if (score < 14) {
+        document.getElementById("resultat").style.color = "orange";
+      } else if (score < 18) {
+        document.getElementById("resultat").style.color = "#90ee90"; // vert clair (lightgreen)
+      } else {
+        document.getElementById("resultat").style.color = "#006400"; // vert foncé (darkgreen)
+      }
     document.getElementById("resultat").textContent = `Votre score est : ${score} points`;
-
-
-    celluleTentative.textContent = tentative;
-    celluleScore.textContent = score;
 
     tentative++; // Incrémentation pour la prochaine soumission
 
