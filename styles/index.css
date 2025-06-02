@@ -684,3 +684,30 @@ input[type="checkbox"] {
   font-size: 0.95rem;
   color: #333;
 }
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #c0c0c0;
+}
+
+.social-button img {
+  width: 60px;
+  height: 60px;
+}
